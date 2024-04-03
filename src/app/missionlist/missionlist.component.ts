@@ -24,6 +24,7 @@ export class MissionlistComponent implements OnInit {
 
   getLaunches() {
     this.http.get<SpaceXLaunch[]>('https://api.spacexdata.com/v3/launches').subscribe(data => {
+      console.log(data);
       this.launches = data;
     });
   }

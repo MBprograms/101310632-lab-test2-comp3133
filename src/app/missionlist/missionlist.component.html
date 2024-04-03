@@ -7,3 +7,11 @@
       <p mat-line>{{ launch.details }}</p>
     </mat-list-item>
   </mat-list>
+
+<!-- Path: src/app/missionlist/missionlist.component.ts -->
+<div *ngFor="let launch of launches">
+  <h2>{{ launch.mission_name }}</h2>
+  <p>{{ launch.launch_year }}</p>
+  <p>{{ launch.details }}</p>
+  <img [src]="launch.mission_patch_small" alt="Mission patch">
+</div>
