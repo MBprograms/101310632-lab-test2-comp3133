@@ -1,4 +1,3 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';//
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -13,7 +12,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    MissionlistComponent,
+    MissionlistComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +22,6 @@ const routes: Routes = [
     RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],//
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
