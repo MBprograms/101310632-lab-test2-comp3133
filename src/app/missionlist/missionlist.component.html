@@ -1,12 +1,12 @@
 <p>SpaceX Mission List with Year, Name, and Description.</p>
-<mat-list>
+<!-- <mat-list>
     <mat-list-item *ngFor="let launch of launches">
       <img mat-list-avatar [src]="launch.mission_patch_small" alt="Mission Patch">
       <h3 mat-line>{{ launch.mission_name }}</h3>
       <p mat-line>{{ launch.launch_year }}</p>
       <p mat-line>{{ launch.details }}</p>
     </mat-list-item>
-  </mat-list>
+  </mat-list> -->
 
 <div *ngFor="let launch of launches">
   <h2>{{ launch.mission_name }}</h2>
