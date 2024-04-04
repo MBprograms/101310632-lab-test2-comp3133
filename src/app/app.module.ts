@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MissionlistComponent } from './missionlist/missionlist.component';
 import { MatListModule } from '@angular/material/list';
-
 const routes: Routes = [
   { path: '', component: MissionlistComponent },
 ];
@@ -19,7 +18,8 @@ const routes: Routes = [
     BrowserModule,
     HttpClientModule,
     MatListModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
